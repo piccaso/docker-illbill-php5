@@ -10,3 +10,6 @@ do
 done
 apt-get update
 apt-get install -y libapache2-mod-php5=5.2.10.dfsg.1-2ubuntu6.10 php5-cli=5.2.10.dfsg.1-2ubuntu6.10 php5-common=5.2.10.dfsg.1-2ubuntu6.10 php5-curl=5.2.10.dfsg.1-2ubuntu6.10 php5-dev=5.2.10.dfsg.1-2ubuntu6.10 php5-gd=5.2.10.dfsg.1-2ubuntu6.10 php5-mysql=5.2.10.dfsg.1-2ubuntu6.10 php5-sqlite=5.2.10.dfsg.1-2ubuntu6.10 libxrender1 libxext6
+apt-get install -y libc6-i386 libxrender1:i386 libfontconfig1:i386 libxext6:i386 libstdc++6:i386
+
+apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* 

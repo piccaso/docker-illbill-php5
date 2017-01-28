@@ -7,6 +7,7 @@ RUN chmod +x /usr/local/bin/run
 RUN a2enmod rewrite
 RUN a2enmod expires
 RUN a2enmod deflate
+ADD fonts.tgz /usr/share/
 
 # Declare ports to expose
 EXPOSE 80
